@@ -1,0 +1,22 @@
+{
+  "name": "mini-page-renderer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/keisei77/mini-page-renderer.git",
+  "author": "keisei77 <keisei.jia@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
+    "html-webpack-plugin": "^4.2.0",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^7.0.0",
+    "typescript": "^3.8.3"
+  }
+}
