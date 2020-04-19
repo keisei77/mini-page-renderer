@@ -6,6 +6,7 @@
   "author": "keisei77 <keisei.jia@qq.com>",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.17.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "webpack": "^4.42.1",
