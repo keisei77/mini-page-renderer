@@ -40,8 +40,5 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new webpack.ProgressPlugin(),
-    new HtmlWebpackPlugin({ template: './src/index.html' }),
-  ],
+  plugins: [new webpack.ProgressPlugin()],
 };

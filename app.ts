@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
-
+const ssr = require('./src/server.tsx');
+const template = require('./src/template.tsx');
 const app = express();
 
 // hide powered by express
@@ -12,5 +13,12 @@ app.listen(process.env.PORT || 3000, () => {
 
 // server rendered home page
 app.get('/', (req, res) => {
+  const content = ssr();
+  const response = template('Server render page', {}, content);
   res.send('Hello world!');
+});
+
+// server rendered home page
+app.get('/client', (req, res) => {
+  res.send('Client Hello world!');
 });
