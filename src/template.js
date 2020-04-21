@@ -1,8 +1,4 @@
-export default function template(
-  title: string,
-  initialState: any,
-  content: string
-) {
+export default function template(title, initialState, content) {
   let scripts = '';
   // 来自服务端
   if (content) {

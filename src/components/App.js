@@ -1,12 +1,7 @@
-import * as React from 'react';
-import * as ReactDOMServer from 'react-dom/server';
+import React from 'react';
+import ReactDOMServer from 'react-dom/server';
 
-export interface AppProps {
-  compiler: string;
-  framework: string;
-}
-
-export const App = (props: AppProps) => (
+export const App = (props) => (
   <h1>
     App from {props.compiler} and {props.framework}!
   </h1>

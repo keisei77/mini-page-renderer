@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
-const ssr = require('./src/server.tsx');
-const template = require('./src/template.tsx');
+const ssr = require('./src/server');
+const template = require('./src/template');
 const app = express();
 
 // hide powered by express
