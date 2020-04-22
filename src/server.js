@@ -5,11 +5,9 @@ const { App } = require('./components/App');
 
 const { renderToString } = ReactDOMServer;
 
-module.exports = function render() {
-  const content = renderToString(
-    <App compiler="typescript" framework="express.js" />
-  );
-
+module.exports = function render(props) {
+  const content = renderToString(<App {...props} />);
+  console.log(content);
   return {
     content,
   };

@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin'); //installed via npm
 const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
   mode: 'development',
@@ -13,12 +14,13 @@ module.exports = {
   },
 
   entry: {
-    main: './src/index.tsx',
+    client: './src/client.js',
+    bundle: './src/bundle.js',
   },
 
   output: {
-    filename: 'main.js',
-    path: __dirname + '/dist',
+    path: path.resolve(__dirname, 'assets'),
+    filename: '[name].js',
   },
 
   module: {
