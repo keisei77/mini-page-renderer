@@ -1,7 +1,7 @@
 import React from 'react';
 // import ReactDOMServer from 'react-dom/server';
 
-export const App = (props) => {
+const App = (props) => {
   console.log(props);
   return (
     <h1>
@@ -10,6 +10,7 @@ export const App = (props) => {
   );
 };
 
+export default App;
 // const renderedContent = ReactDOMServer.renderToString(
 //   <App compiler="typescript" framework="react" />
 // );

@@ -28630,12 +28630,11 @@ Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["hydrate"])( /*#__PURE__*/react__W
 /*!*******************************!*\
   !*** ./src/components/app.js ***!
   \*******************************/
-/*! exports provided: App */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "App", function() { return App; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
  // import ReactDOMServer from 'react-dom/server';
@@ -28643,7 +28642,9 @@ __webpack_require__.r(__webpack_exports__);
 var App = function App(props) {
   console.log(props);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "App from ", props.compiler, " and ", props.framework, "!");
-}; // const renderedContent = ReactDOMServer.renderToString(
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (App); // const renderedContent = ReactDOMServer.renderToString(
 //   <App compiler="typescript" framework="react" />
 // );
 // console.log(renderedContent);
