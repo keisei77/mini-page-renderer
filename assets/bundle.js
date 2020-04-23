@@ -28622,6 +28622,25 @@ Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["render"])( /*#__PURE__*/react__WE
 
 /***/ }),
 
+/***/ "./src/components/ComponentCompiler.js":
+/*!*********************************************!*\
+  !*** ./src/components/ComponentCompiler.js ***!
+  \*********************************************/
+/*! exports provided: domParser */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "domParser", function() { return domParser; });
+var domParser = function domParser(doc) {
+  var parser = new DOMParser();
+  return parser.parseFromString(doc, 'text/xml');
+};
+
+
+
+/***/ }),
+
 /***/ "./src/components/app.js":
 /*!*******************************!*\
   !*** ./src/components/app.js ***!
@@ -28633,10 +28652,14 @@ Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["render"])( /*#__PURE__*/react__WE
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
- // import ReactDOMServer from 'react-dom/server';
+/* harmony import */ var _ComponentCompiler__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ComponentCompiler */ "./src/components/ComponentCompiler.js");
+
+
 
 var App = function App(props) {
   console.log(props);
+  var content = Object(_ComponentCompiler__WEBPACK_IMPORTED_MODULE_1__["domParser"])("<div><Button label=\"Confirm\"/></div>");
+  console.log(content);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "App from ", props.compiler, " and ", props.framework, "!");
 };
 

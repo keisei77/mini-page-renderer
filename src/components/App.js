@@ -1,8 +1,10 @@
 import React from 'react';
-// import ReactDOMServer from 'react-dom/server';
+import { domParser } from './ComponentCompiler';
 
 const App = (props) => {
   console.log(props);
+  const content = domParser(`<div><Button label="Confirm"/></div>`);
+  console.log(content);
   return (
     <h1>
       App from {props.compiler} and {props.framework}!

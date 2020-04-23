@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn build && node index.js",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js --watch"
   },
   "dependencies": {
     "@babel/register": "^7.9.0",
