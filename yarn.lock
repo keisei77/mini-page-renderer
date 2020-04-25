@@ -1153,6 +1153,11 @@ acorn-globals@^6.0.0:
     acorn "^7.1.1"
     acorn-walk "^7.1.1"
 
+acorn-jsx@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.npm.taobao.org/acorn-jsx/download/acorn-jsx-5.2.0.tgz#4c66069173d6fdd68ed85239fc256226182b2ebe"
+  integrity sha1-TGYGkXPW/daO2FI5/CViJhgrLr4=
+
 acorn-walk@^7.1.1:
   version "7.1.1"
   resolved "https://registry.npm.taobao.org/acorn-walk/download/acorn-walk-7.1.1.tgz#345f0dffad5c735e7373d2fec9a1023e6a44b83e"
@@ -4179,6 +4184,14 @@ react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.npm.taobao.org/react-is/download/react-is-16.13.1.tgz?cache=0&sync_timestamp=1586484576689&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-is%2Fdownload%2Freact-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=
+
+react-jsx-parser@^1.22.0:
+  version "1.22.0"
+  resolved "https://registry.npm.taobao.org/react-jsx-parser/download/react-jsx-parser-1.22.0.tgz#9ce9488c2f7c435092dd63fbeec91f4ae0ae8b78"
+  integrity sha1-nOlIjC98Q1CS3WP77skfSuCui3g=
+  dependencies:
+    acorn "^7.1.1"
+    acorn-jsx "^5.2.0"
 
 react@^16.13.1:
   version "16.13.1"

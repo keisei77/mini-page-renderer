@@ -18,4 +18,8 @@ function registerAll() {
   });
 }
 
-export { getComponent, registerAll };
+function getAllComponents() {
+  return registeredComponents;
+}
+
+export { getComponent, getAllComponents, registerAll };

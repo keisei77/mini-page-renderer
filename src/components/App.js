@@ -6,9 +6,12 @@ const App = (props) => {
   const content = domParser(`<div><Button label="Confirm"/></div>`);
   console.log(content);
   return (
-    <h1>
-      App from {props.compiler} and {props.framework}!
-    </h1>
+    <>
+      <h1>
+        App from {props.compiler} and {props.framework}!
+      </h1>
+      {content}
+    </>
   );
 };
 
